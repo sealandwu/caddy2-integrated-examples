@@ -16,34 +16,10 @@ jobs:
       fail-fast: false
       matrix:
         config:
-        - {
-            name: "windows-386",
-            GOARCH: 386,
-            GOOS: windows,
-            release: true
-          }
-        - {
-            name: "windows-amd64",
-            GOARCH: amd64,
-            GOOS: windows,
-            release: true
-          }
-        - {
-            name: "linux-amd64",
-            GOARCH: amd64,
-            GOOS: linux,
-            release: true
-          }
+
         - {
             name: "linux-arm64",
             GOARCH: arm64,
-            GOOS: linux,
-            release: true
-          }
-        - {
-            name: "linux-armv5",
-            GOARCH: arm,
-            GOARM: 5,
             GOOS: linux,
             release: true
           }
